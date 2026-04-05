@@ -12,12 +12,17 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UserModel {
     @Id
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "email")
     private String email;
-    private String password;
-    private String role;
 
+    @Column(name = "password")
+    private String password;
+
+    @Column(name = "role")
+    private String role;
 
 }

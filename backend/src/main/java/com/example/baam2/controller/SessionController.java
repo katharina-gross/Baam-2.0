@@ -34,7 +34,7 @@ public class SessionController {
     }
 
     @PatchMapping("/{id}")
-    public void deleteSession(@PathVariable Long id,@RequestBody SessionUpdateDTO sessionUpdateDTO) {
+    public void updateSession(@PathVariable Long id,@RequestBody SessionUpdateDTO sessionUpdateDTO) {
         sessionService.updateSessionName(id, sessionUpdateDTO);
     }
 
