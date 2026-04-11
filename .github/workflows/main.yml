@@ -3,7 +3,7 @@ name: Baam2.0 CI/CD Pipeline
 on:
     push:
         branches:
-            - main
+            - deploy_config
     pull_request:
         branches:
             - main
