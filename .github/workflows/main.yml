@@ -29,7 +29,7 @@ jobs:
                 context: .
                 file: ./backend
                 push: true
-                tags: ghcr.io/${{ github.repository }}/baam2-backend:latest
+                tags: ghcr.io/night-pizza/baam-2.0/baam2-backend:latest
 
     frontend-build:
         runs-on: ubuntu-latest
@@ -50,7 +50,7 @@ jobs:
                 context: .
                 file: ./frontend
                 push: true
-                tags: ghcr.io/${{ github.repository }}/baam2-frontend:latest
+                tags: ghcr.io/night-pizza/baam-2.0/baam2-frontend:latest
 
     deploy:
         runs-on: self-hosted
